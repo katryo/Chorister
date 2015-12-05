@@ -501,17 +501,9 @@
 			path = Quick;
 			sourceTree = "<group>";
 		};
-		98404860C7375B6D1940AE1090F668F5 /* AwesomeCache */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AwesomeCache;
-			sourceTree = "<group>";
-		};
 		B7D6D1B15768525C9C8A025CD2089B94 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				98404860C7375B6D1940AE1090F668F5 /* AwesomeCache */,
 				0B3CC4FF7FE98C4614F255CC80F387F6 /* Nimble */,
 				8D88C6A3C574905108986D3DDA3711C1 /* Quick */,
 			);

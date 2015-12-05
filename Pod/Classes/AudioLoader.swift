@@ -17,7 +17,7 @@ public class AudioLoader: NSObject, AVAssetResourceLoaderDelegate, NSURLConnecti
     var audioCache: Cache<NSData>
     
     
-    public init(cache: Cache<NSData>) {
+    init(cache: Cache<NSData>) {
         audioCache = cache
         print("AudioLoader init")
     }

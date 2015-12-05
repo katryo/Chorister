@@ -6,15 +6,15 @@ public enum CacheExpiry {
     case Date(NSDate)
 }
 
-public class Cache<T: NSCoding> {
-    public let name: String
-    public let cacheDirectory: String
+class Cache<T: NSCoding> {
+    let name: String
+    let cacheDirectory: String
     
     private let cache = NSCache()
     private let fileManager = NSFileManager()
     private let diskQueue: dispatch_queue_t = dispatch_queue_create("com.katryo.cache.diskQueue", DISPATCH_QUEUE_SERIAL)
     
-    public init(name: String, directory: String?) {
+    init(name: String, directory: String?) {
         self.name = name
         cache.name = name
         
@@ -33,11 +33,11 @@ public class Cache<T: NSCoding> {
         }
     }
     
-    public convenience init(name: String) {
+    convenience init(name: String) {
         self.init(name: name, directory: nil)
     }
     
-    public func setObjectForKey(key: String, cacheBlock: ((T, CacheExpiry) -> (), (NSError?) -> ()) -> (), completion: (T?, Bool, NSError?) -> ()) {
+    func setObjectForKey(key: String, cacheBlock: ((T, CacheExpiry) -> (), (NSError?) -> ()) -> (), completion: (T?, Bool, NSError?) -> ()) {
         if let object = objectForKey(key) {
             completion(object, true,nil)
         } else {
@@ -52,7 +52,7 @@ public class Cache<T: NSCoding> {
         }
     }
     
-    public func objectForKey(key: String) -> T? {
+    func objectForKey(key: String) -> T? {
         var possibleObject = cache.objectForKey(key) as? CacheObject
         
         if possibleObject == nil {
@@ -75,11 +75,11 @@ public class Cache<T: NSCoding> {
         return nil
     }
     
-    public func setObject(object: T, forKey key: String) {
+    func setObject(object: T, forKey key: String) {
         self.setObject(object, forKey: key, expires: .Never)
     }
     
-    public func setObject(object: T, forKey key: String, expires: CacheExpiry) {
+    func setObject(object: T, forKey key: String, expires: CacheExpiry) {
         let expiryDate = expiryDateForCacheExpiry(expires)
         let cacheObject = CacheObject(value: object, expiryDate: expiryDate)
         cache.setObject(cacheObject, forKey: key)
@@ -90,7 +90,7 @@ public class Cache<T: NSCoding> {
         }
     }
     
-    public func removeObjectForKey(key: String) {
+    func removeObjectForKey(key: String) {
         cache.removeObjectForKey(key)
         
         dispatch_async(diskQueue) {
@@ -102,7 +102,7 @@ public class Cache<T: NSCoding> {
         }
     }
     
-    public func removeAllObjects() {
+    func removeAllObjects() {
         dispatch_async(diskQueue) {
             self.cache.removeAllObjects()
             let paths = (try! self.fileManager.contentsOfDirectoryAtPath(self.cacheDirectory))
@@ -117,7 +117,7 @@ public class Cache<T: NSCoding> {
         }
     }
     
-    public func removeExpiredObjects() {
+    func removeExpiredObjects() {
         dispatch_async(diskQueue) {
             let paths = (try! self.fileManager.contentsOfDirectoryAtPath(self.cacheDirectory))
             let keys = paths.map { NSURL(fileURLWithPath: $0).URLByDeletingPathExtension?.absoluteString }
@@ -133,7 +133,7 @@ public class Cache<T: NSCoding> {
     
     // MARK: Subscripting
     
-    public subscript(key: String) -> T? {
+    subscript(key: String) -> T? {
         get {
             return objectForKey(escapeSlashes(key))
         }

@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/Chorister.svg?style=flat)](http://cocoapods.org/pods/Chorister)
 [![Platform](https://img.shields.io/cocoapods/p/Chorister.svg?style=flat)](http://cocoapods.org/pods/Chorister)
 
+Christer can play tunes with streaming, store it in the cache and reuse it when it is possible.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -12,7 +14,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 - Swift 2.0+
-- AwesomeCache 2.0
 
 ## Installation
 
@@ -30,6 +31,8 @@ Ryo Kato, katoryo55@gmail.com
 ## License
 
 Chorister is available under the MIT license. See the LICENSE file for more info.
+
+Chorister uses the modified version of AwesomeCache ( https://github.com/aschuch/AwesomeCache ) created by Alexander Schuch ( http://schuch.me ), so you can find his name in the LICENSE file.
 
 ## Tunes
 
