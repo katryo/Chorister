@@ -16,7 +16,6 @@
 		0D73457424F9D4FD6C86CC54949CBD83 /* World+DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC338ADD3D8D1FE23B9D2128A8A08CB /* World+DSL.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0F49254A4C560DD4696936F6080756DC /* Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC01FD716259F08F08C38452492DE100 /* Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		103BEECFE816A771032F6227936382E9 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8195562D539E3A4966E538199D97AEDB /* Closures.swift */; };
-		13ED18AFE2C82D2A2E48EC31472D3BA4 /* SlashAcceptableCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887F51258957AFAF76C6D0A33737DD35 /* SlashAcceptableCache.swift */; };
 		1E28F9362956B758C4C981D3C1129C90 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F594FE26FD97093C6D2167F7F0CC27 /* BeGreaterThan.swift */; };
 		25D2F5A41D7CDAA31059B5EB936309CF /* StreamingAudioCacheContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF2CDCDC0DD3DBCB3EA2C6411DB48C /* StreamingAudioCacheContainer.swift */; };
 		29576C163A9F3DB541FC4548E7ED7FF4 /* Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872A4217A2EC9D47B3E14E5DF0B4F51 /* Quick-dummy.m */; };
@@ -201,7 +200,6 @@
 		8195562D539E3A4966E538199D97AEDB /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
 		84EA81206A3FB07A53C194C33F6D3F41 /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
 		8510B2598170B5EB03669DF4E48FFE31 /* Nimble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nimble-dummy.m"; sourceTree = "<group>"; };
-		887F51258957AFAF76C6D0A33737DD35 /* SlashAcceptableCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SlashAcceptableCache.swift; sourceTree = "<group>"; };
 		88D6ACA84B4AB86D4330F39C674BF038 /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
 		89D53AD0348835C513A38F263E1B7A5F /* World.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = World.h; path = Quick/World.h; sourceTree = "<group>"; };
 		8A25B5806E762B357A053549E715E0CC /* AllPass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllPass.swift; path = Nimble/Matchers/AllPass.swift; sourceTree = "<group>"; };
@@ -388,7 +386,6 @@
 				DFF1D58F1CCBC4B1FF5EF7E99F00FB8F /* AudioLoader.swift */,
 				D36298DA96619E3EB5B597A1F0A5433F /* Cache.swift */,
 				303437C4FA2D8EAEE740C57935190EF9 /* CacheObject.swift */,
-				887F51258957AFAF76C6D0A33737DD35 /* SlashAcceptableCache.swift */,
 				F2FF2CDCDC0DD3DBCB3EA2C6411DB48C /* StreamingAudioCacheContainer.swift */,
 			);
 			path = Classes;
@@ -796,7 +793,6 @@
 				6216A1319D6C639EC5B1DF064A71E939 /* Cache.swift in Sources */,
 				7891949353AB53185E10B20DF23BC7CC /* CacheObject.swift in Sources */,
 				EC85C784563AA668C8AA01F498907C76 /* Chorister-dummy.m in Sources */,
-				13ED18AFE2C82D2A2E48EC31472D3BA4 /* SlashAcceptableCache.swift in Sources */,
 				25D2F5A41D7CDAA31059B5EB936309CF /* StreamingAudioCacheContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

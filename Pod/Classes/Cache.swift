@@ -1,11 +1,3 @@
-//
-//  Cache.swift
-//  DenkinovelPrototypeTwo
-//
-//  Created by RYOKATO on 2015/03/01.
-//  Copyright (c) 2015年 Denkinovel. All rights reserved.
-//
-
 import Foundation
 
 public enum CacheExpiry {
