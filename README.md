@@ -7,6 +7,8 @@
 
 Christer can play tunes with streaming, store it in the cache and reuse it when it is possible.
 
+This library is created for the Denkinovel app https://itunes.apple.com/jp/app/denkinovel/id1000108250?l=ja&ls=1&mt=8
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
