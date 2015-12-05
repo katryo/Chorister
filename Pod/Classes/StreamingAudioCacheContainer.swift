@@ -62,7 +62,7 @@ public class StreamingAudioCacheContainer: NSObject {
         let playerItem = AVPlayerItem(asset: asset)
         asset.loadValuesAsynchronouslyForKeys(["duration"], completionHandler: {
             self.musicPlayer.replaceCurrentItemWithPlayerItem(playerItem)
-        print("replaced ", playerItem)
+        })
         playerItem.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.New, context: &context)
         musicPlayerItems.append(playerItem)
     }
