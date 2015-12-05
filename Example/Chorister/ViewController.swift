@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Chorister
 
 class ViewController: UIViewController {
+    var audioContainer = StreamingAudioCacheContainer(repeats: true)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,8 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        audioContainer.reset()
     }
 
 }

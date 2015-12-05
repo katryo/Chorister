@@ -11,6 +11,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+- Swift 2.0+
+- AwesomeCache 2.0
+
 ## Installation
 
 Chorister is available through [CocoaPods](http://cocoapods.org). To install
@@ -27,3 +30,7 @@ Ryo Kato, katoryo55@gmail.com
 ## License
 
 Chorister is available under the MIT license. See the LICENSE file for more info.
+
+## Tunes
+
+I used CC0 tunes from this site: http://www.nichecom.com/songs/

@@ -21,5 +21,10 @@
     "Chorister": [
       "Pod/Assets/*.png"
     ]
+  },
+  "dependencies": {
+    "AwesomeCache": [
+      "~> 2.0"
+    ]
   }
 }

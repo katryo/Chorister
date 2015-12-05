@@ -6,21 +6,19 @@
 //
 //
 
-
-//import UIKit
 import AVFoundation
 import AwesomeCache
 
 var context = "playAudioContext"
 
-class StreamingAudioCacheContainer: NSObject {
+public class StreamingAudioCacheContainer: NSObject {
     var musicPlayer: AVPlayer = AVPlayer()
     var musicPlayerItems = [AVPlayerItem]()
     var isLooping: Bool
     var audioLoader: AudioLoader
     var audioCache = SlashAcceptableCache?()
     
-    init (repeats: Bool) {
+    public init (repeats: Bool) {
         var audioCacheBody = Cache<NSData>?()
         do {
             audioCacheBody = try Cache<NSData>(name: "audio")
@@ -40,12 +38,12 @@ class StreamingAudioCacheContainer: NSObject {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
-    func reset() {
+    public func reset() {
         audioCache!.removeAllObjects()
         audioLoader = AudioLoader(cache: audioCache!)
     }
     
-    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+    override public func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         if musicPlayer.currentItem!.status == AVPlayerItemStatus.ReadyToPlay {
             if keyPath == "status" {
                 musicPlayer.play()
@@ -64,7 +62,7 @@ class StreamingAudioCacheContainer: NSObject {
     }
     
     
-    func changeAudio(url: NSURL) {
+    public func changeAudio(url: NSURL) {
         let asset = loadAssetFromCacheOrWeb(url)
         let playerItem = AVPlayerItem(asset: asset)
         musicPlayer.replaceCurrentItemWithPlayerItem(playerItem)
@@ -72,7 +70,7 @@ class StreamingAudioCacheContainer: NSObject {
         musicPlayerItems.append(playerItem)
     }
     
-    func pauseAudio() {
+    public func pauseAudio() {
         musicPlayer.pause()
     }
     

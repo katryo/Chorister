@@ -8,6 +8,7 @@ end
 
 target 'Chorister_Tests', :exclusive => true do
   pod "Chorister", :path => "../"
+  pod 'AwesomeCache', '~> 2.0'
 
   pod 'Quick', '~> 0.8.0'
   pod 'Nimble', '3.0.0'

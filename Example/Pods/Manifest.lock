@@ -1,6 +1,7 @@
 PODS:
   - AwesomeCache (2.0)
-  - Chorister (0.1.0)
+  - Chorister (0.1.0):
+    - AwesomeCache (~> 2.0)
   - Nimble (3.0.0)
   - Quick (0.8.0)
 
@@ -16,7 +17,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AwesomeCache: 5d6839ad139cdcee3c3a067f6fc1849523867dd9
-  Chorister: e9b503945356e451ea11685ddc40ff02925887d9
+  Chorister: 071c808bd7127ae6eec169b09bd771980d3aec5d
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
 
