@@ -1,0 +1,25 @@
+{
+  "name": "Chorister",
+  "version": "0.1.0",
+  "summary": "A short description of Chorister.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Chorister",
+  "license": "MIT",
+  "authors": {
+    "Ryo Kato": "katoryo55@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Chorister.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "Chorister": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module Pods_Chorister_Tests {
+  umbrella header "Pods-Chorister_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

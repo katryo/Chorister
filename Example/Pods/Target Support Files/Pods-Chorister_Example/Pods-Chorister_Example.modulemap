@@ -1,0 +1,6 @@
+framework module Pods_Chorister_Example {
+  umbrella header "Pods-Chorister_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
