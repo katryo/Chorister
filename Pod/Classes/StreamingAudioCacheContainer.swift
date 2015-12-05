@@ -7,7 +7,6 @@
 //
 
 import AVFoundation
-import AwesomeCache
 
 var context = "playAudioContext"
 
@@ -16,18 +15,12 @@ public class StreamingAudioCacheContainer: NSObject {
     var musicPlayerItems = [AVPlayerItem]()
     var isLooping: Bool
     var audioLoader: AudioLoader
-    var audioCache = SlashAcceptableCache?()
+    var audioCache: Cache<NSData>
     
     public init (repeats: Bool) {
-        var audioCacheBody = Cache<NSData>?()
-        do {
-            audioCacheBody = try Cache<NSData>(name: "audio")
-        } catch _ {
-            print("Failed to initialize audioCache")
-        }
-        audioCache = SlashAcceptableCache(cache: audioCacheBody!)
+        audioCache = Cache(name: "audioCache")
         self.isLooping = repeats
-        audioLoader = AudioLoader(cache: audioCache!)
+        audioLoader = AudioLoader(cache: audioCache)
         super.init()
     }
     
@@ -39,11 +32,13 @@ public class StreamingAudioCacheContainer: NSObject {
     }
     
     public func reset() {
-        audioCache!.removeAllObjects()
-        audioLoader = AudioLoader(cache: audioCache!)
+        audioCache.removeAllObjects()
+        audioLoader = AudioLoader(cache: audioCache)
     }
     
     override public func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+        print("observeValue")
+        print(musicPlayer.currentItem)
         if musicPlayer.currentItem!.status == AVPlayerItemStatus.ReadyToPlay {
             if keyPath == "status" {
                 musicPlayer.play()
@@ -65,7 +60,9 @@ public class StreamingAudioCacheContainer: NSObject {
     public func changeAudio(url: NSURL) {
         let asset = loadAssetFromCacheOrWeb(url)
         let playerItem = AVPlayerItem(asset: asset)
-        musicPlayer.replaceCurrentItemWithPlayerItem(playerItem)
+        asset.loadValuesAsynchronouslyForKeys(["duration"], completionHandler: {
+            self.musicPlayer.replaceCurrentItemWithPlayerItem(playerItem)
+        print("replaced ", playerItem)
         playerItem.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.New, context: &context)
         musicPlayerItems.append(playerItem)
     }
@@ -77,19 +74,23 @@ public class StreamingAudioCacheContainer: NSObject {
     private func loadAssetFromCacheOrWeb(url: NSURL) -> AVURLAsset {
         let urlString = url.absoluteString
         var asset: AVURLAsset
-        if (audioCache?.objectForKey(urlString) != nil) {
-            let path = audioCache!.pathForKey(urlString)
+        if (audioCache.objectForKey(urlString) != nil) {
+            print("Audio resource \(url) found in audioCache.")
+            let path = audioCache.pathForKey(urlString)
+            print("path is ", path)
             let filePathURL = NSURL.fileURLWithPath(path)
             asset = AVURLAsset(URL: filePathURL, options: nil)
         } else {
             print("Audio resource \(url) not found in audioCache.")
-            asset = AVURLAsset(URL: url, options: nil)
+            let scheme = url.scheme
+            asset = AVURLAsset(URL: urlWithCustomScheme(url, scheme: scheme + "streaming"), options: nil)
         }
         asset.resourceLoader.setDelegate(audioLoader, queue: dispatch_get_main_queue())
+        print("audioLoader is ", audioLoader)
         return asset
     }
     
-    private func URLWithCustomScheme(url: NSURL, scheme: String) -> NSURL {
+    private func urlWithCustomScheme(url: NSURL, scheme: String) -> NSURL {
         let components = NSURLComponents(URL: url, resolvingAgainstBaseURL: false)!
         components.scheme = scheme
         return components.URL!

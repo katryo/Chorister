@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530DD77F1C12DBAF00C3FEAB /* MusicContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530DD77E1C12DBAF00C3FEAB /* MusicContainer.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		110BA4835A046559422814F8 /* Pods-Chorister_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorister_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chorister_Tests/Pods-Chorister_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		15938FAD9E2F1D9378B826A9 /* Chorister.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Chorister.podspec; path = ../Chorister.podspec; sourceTree = "<group>"; };
 		4BE002687F7E57102B4D62F0 /* Pods-Chorister_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorister_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chorister_Example/Pods-Chorister_Example.release.xcconfig"; sourceTree = "<group>"; };
+		530DD77E1C12DBAF00C3FEAB /* MusicContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicContainer.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Chorister_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chorister_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				530DD77E1C12DBAF00C3FEAB /* MusicContainer.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -359,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530DD77F1C12DBAF00C3FEAB /* MusicContainer.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
