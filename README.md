@@ -40,6 +40,17 @@ What you have to deal with is `StreamingAudioCacheContainer` only. `StreamingAud
 
 When the URL appears again that is used previously in `changeAudio(url: NSURL)`, `StreamingAudioCacheContainer` does not download it from the Internet, but locally load from the cache and plays the tune immediately.
 
+```
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+
+        audioContainer.reset()
+    }
+```
+
+If you want to clean the all cache, call `reset()` to the `StreamingAudioCacheContainer`. It clears the cache totally.
+
 ## Example project
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
