@@ -9,7 +9,7 @@
 import AVFoundation
 import MobileCoreServices
 
-public class AudioLoader: NSObject, AVAssetResourceLoaderDelegate, NSURLConnectionDataDelegate {
+class AudioLoader: NSObject, AVAssetResourceLoaderDelegate, NSURLConnectionDataDelegate {
     var pendingRequests = [AVAssetResourceLoadingRequest]()
     var songData = NSMutableData()
     var response: NSURLResponse?
@@ -19,40 +19,34 @@ public class AudioLoader: NSObject, AVAssetResourceLoaderDelegate, NSURLConnecti
     
     init(cache: Cache<NSData>) {
         audioCache = cache
-        print("AudioLoader init")
     }
     
-    public func connection(connection: NSURLConnection, didReceiveResponse response: NSURLResponse) {
-        print("didReceiveResponse")
+    func connection(connection: NSURLConnection, didReceiveResponse response: NSURLResponse) {
         self.songData = NSMutableData()
         self.response = response
         self.processPendingRequests()
     }
     
-    public func connection(connection: NSURLConnection, didReceiveData data: NSData) {
-        print("didReceiveData...")
+    func connection(connection: NSURLConnection, didReceiveData data: NSData) {
         self.songData.appendData(data)
         self.processPendingRequests()
     }
     
-    public func connectionDidFinishLoading(connection: NSURLConnection) {
-        print("set the data to the cache")
+    func connectionDidFinishLoading(connection: NSURLConnection) {
         self.processPendingRequests()
         let url = getActualURL(connection.currentRequest.URL!)
         let urlString = url.absoluteString
-        print("urlString is ", urlString)
         if (audioCache.objectForKey(urlString) != nil) {
             return
         }
         audioCache[urlString] = songData
     }
     
-    public func connection(connection: NSURLConnection, didFailWithError error: NSError) {
+    func connection(connection: NSURLConnection, didFailWithError error: NSError) {
         print(error)
     }
     
-    public func resourceLoader(resourceLoader: AVAssetResourceLoader, shouldWaitForLoadingOfRequestedResource loadingRequest: AVAssetResourceLoadingRequest) -> Bool {
-        print("resourceLoader")
+    func resourceLoader(resourceLoader: AVAssetResourceLoader, shouldWaitForLoadingOfRequestedResource loadingRequest: AVAssetResourceLoadingRequest) -> Bool {
         let interceptedURL = loadingRequest.request.URL
         let actualURL = getActualURL(interceptedURL!)
         let urlString = actualURL.absoluteString
@@ -67,8 +61,7 @@ public class AudioLoader: NSObject, AVAssetResourceLoaderDelegate, NSURLConnecti
         return true
     }
     
-    public func resourceLoader(resourceLoader: AVAssetResourceLoader, didCancelLoadingRequest loadingRequest: AVAssetResourceLoadingRequest) {
-        print("resourceLoader")
+    func resourceLoader(resourceLoader: AVAssetResourceLoader, didCancelLoadingRequest loadingRequest: AVAssetResourceLoadingRequest) {
         pendingRequests = pendingRequests.filter({ $0 != loadingRequest })
     }
     
