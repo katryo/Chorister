@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3225DB9C6A0D42404B13F8CC'
+               BlueprintIdentifier = '49AD8E0E39D05CBF4045E093'
                BlueprintName = 'Chorister'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Chorister.framework'>

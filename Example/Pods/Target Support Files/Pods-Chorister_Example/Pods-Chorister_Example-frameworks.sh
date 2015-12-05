@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Chorister_Example/AwesomeCache.framework"
   install_framework "Pods-Chorister_Example/Chorister.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Chorister_Example/AwesomeCache.framework"
   install_framework "Pods-Chorister_Example/Chorister.framework"
 fi
