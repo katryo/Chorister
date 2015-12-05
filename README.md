@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     }
 ```
 
-What you have to deal with is `StreamingAudioCacheContainer` only. `StreamingAudioCacheContainer` plays music when `changeAudio(url: NSURL)` is called. It downloads the tune from the Internet and plays streaming music. At the same time,  `StreamingAudioCacheContainer` stores the music data store in the cache simultaneously.
+What you have to deal with is `StreamingAudioCacheContainer` only. `StreamingAudioCacheContainer` plays music when `changeAudio(url: NSURL)` is called. It downloads the tune from the Internet and plays streaming music. At the same time,  `StreamingAudioCacheContainer` stores the music data in the cache simultaneously.
 
 When the URL appears again that is used previously in `changeAudio(url: NSURL)`, `StreamingAudioCacheContainer` does not download it from the Internet, but locally load from the cache and plays the tune immediately.
 
