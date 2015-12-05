@@ -26,7 +26,7 @@ pod "Chorister"
 
 ## Author
 
-Ryo Kato, katoryo55@gmail.com
+Ryo Kato, http://katryo.com
 
 ## License
 
