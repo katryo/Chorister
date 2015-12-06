@@ -165,7 +165,7 @@ class Cache<T: NSCoding> {
     }
     
     private func escapeSlashes(key: String) -> String {
-        return key.stringByReplacingOccurrencesOfString("/", withString: "\\", options: [], range: nil)
+        return key.stringByReplacingOccurrencesOfString("/", withString: "slash", options: [], range: nil)
     }
     
 }
