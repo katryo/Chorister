@@ -60,9 +60,7 @@ public class StreamingAudioCacheContainer: NSObject {
     public func changeAudio(url: NSURL) {
         let asset = loadAssetFromCacheOrWeb(url)
         let playerItem = AVPlayerItem(asset: asset)
-        asset.loadValuesAsynchronouslyForKeys(["duration"], completionHandler: {
-            self.musicPlayer.replaceCurrentItemWithPlayerItem(playerItem)
-        })
+        self.musicPlayer.replaceCurrentItemWithPlayerItem(playerItem)
         playerItem.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.New, context: &context)
         musicPlayerItems.append(playerItem)
     }
