@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Chorister"
-  s.version          = "0.1.3"
+  s.version          = "0.1.4"
   s.summary          = "An audio library that plays tunes from the web with streaming, store it in the cache, reuse it when it is possible"
 
 # This description is used to generate tags and improve search results.

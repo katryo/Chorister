@@ -84,7 +84,6 @@ public class StreamingAudioCacheContainer: NSObject {
             asset = AVURLAsset(URL: urlWithCustomScheme(url, scheme: scheme + "streaming"), options: nil)
         }
         asset.resourceLoader.setDelegate(audioLoader, queue: dispatch_get_main_queue())
-        print("audioLoader is ", audioLoader)
         return asset
     }
     

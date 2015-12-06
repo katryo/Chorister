@@ -22,6 +22,7 @@ class AudioLoader: NSObject, AVAssetResourceLoaderDelegate, NSURLConnectionDataD
     }
     
     func connection(connection: NSURLConnection, didReceiveResponse response: NSURLResponse) {
+        self.songData = NSMutableData()  // Reset the songData
         self.response = response
         self.processPendingRequests()
     }
