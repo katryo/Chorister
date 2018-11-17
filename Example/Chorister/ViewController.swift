@@ -20,18 +20,15 @@ class ViewController: UIViewController {
         audioContainer.reset()
     }
     
-    @IBAction func buttonAPushed(_ sender: UIButton) {
-        audioContainer.changeAudio(url: NSURL(string: "https://s3.amazonaws.com/cc0-tunes/nichecom/a_new_beginning.mp3")!)
+    @IBAction func buttonBPushed(_ sender: UIButton) {
+    audioContainer.changeAudio(url: NSURL(string: "https://s3.amazonaws.com/cc0-tunes/nichecom/lets_dance.mp3")!)
     }
-    
 
-    @IBAction func ButtonBPushed(_ sender: UIButton) {
-        audioContainer.changeAudio(url: NSURL(string: "https://s3.amazonaws.com/cc0-tunes/nichecom/lets_dance.mp3")!)
+    @IBAction func buttonCPushed(_ sender: UIButton) {
+        audioContainer.changeAudio(url: NSURL(string: "https://s3.amazonaws.com/cc0-tunes/nichecom/spotting.mp3")!)
+        
     }
     
-    @IBAction func ButtonCPushed(_ sender: UIButton) {
-        audioContainer.changeAudio(url: NSURL(string: "https://s3.amazonaws.com/cc0-tunes/nichecom/spotting.mp3")!)
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

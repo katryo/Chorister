@@ -1,5 +1,5 @@
 PODS:
-  - Chorister (0.1.4)
+  - Chorister (0.2.0)
   - Nimble (7.3.1)
   - Quick (1.3.2)
 
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Chorister: d42920bc9d11d050b900edaa55a37946962955a5
+  Chorister: fda897dfb434d1726ab74a1f9cd0f0cac65f696f
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
 

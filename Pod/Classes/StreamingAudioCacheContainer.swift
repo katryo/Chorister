@@ -18,7 +18,6 @@ open class StreamingAudioCacheContainer: NSObject {
     var audioCache: Cache<NSData>
     
     public init (repeats: Bool) {
-        print("container init")
         audioCache = Cache(name: "audioCache")
         self.isLooping = repeats
         audioLoader = AudioLoader(cache: audioCache)
@@ -38,8 +37,6 @@ open class StreamingAudioCacheContainer: NSObject {
     }
     
     override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        print("observeValue")
-        print(musicPlayer.currentItem)
         if musicPlayer.currentItem!.status == AVPlayerItem.Status.readyToPlay {
             if keyPath == "status" {
                 musicPlayer.play()
@@ -58,27 +55,10 @@ open class StreamingAudioCacheContainer: NSObject {
     }
     
     public func changeAudio(url: NSURL) {
-        print("CA starts")
         let asset = loadAssetFromCacheOrWeb(url: url)
         let playerItem = AVPlayerItem(asset: asset)
         self.musicPlayer.replaceCurrentItem(with: playerItem)
         playerItem.addObserver(self, forKeyPath: "status", options: .new, context: &context)
-        print("changeAudio")
-//        playerItem.observe(\.status,
-//                           options: .new) {_, change in
-//                            print("observe")
-//
-//                            if self.musicPlayer.currentItem!.status == AVPlayerItem.Status.readyToPlay {
-//                                print("play")
-//                                self.musicPlayer.play()
-//                                if self.isLooping {
-//                                    NotificationCenter.default.addObserver(self, selector: Selector(("musicFinished")), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.musicPlayer.currentItem)
-//
-//                    }
-//
-//
-//            }
-//        }
         musicPlayerItems.append(playerItem)
     }
     
