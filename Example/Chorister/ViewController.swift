@@ -12,17 +12,25 @@ import Chorister
 class ViewController: UIViewController {
     var audioContainer = MusicContainer(repeats: true)
 
-    @IBAction func ButtonAPushed(sender: UIButton) {
-        audioContainer.changeAudio(NSURL(string: "https://s3.amazonaws.com/cc0-tunes/nichecom/a_new_beginning.mp3")!)
+    @IBAction func buttonDPushed(_ sender: Any) {
+          audioContainer.changeAudio(url: NSURL(string: "https://s3.amazonaws.com/cc0-tunes/nichecom/a_new_beginning.mp3")!)
     }
     
-    
-    @IBAction func ButtonBPushed(sender: UIButton) {
-        audioContainer.changeAudio(NSURL(string: "https://s3.amazonaws.com/cc0-tunes/nichecom/lets_dance.mp3")!)
+    @IBAction func resetPushed(_ sender: UIButton) {
+        audioContainer.reset()
     }
     
-    @IBAction func ButtonCPushed(sender: UIButton) {
-        audioContainer.changeAudio(NSURL(string: "https://s3.amazonaws.com/cc0-tunes/nichecom/spotting.mp3")!)
+    @IBAction func buttonAPushed(_ sender: UIButton) {
+        audioContainer.changeAudio(url: NSURL(string: "https://s3.amazonaws.com/cc0-tunes/nichecom/a_new_beginning.mp3")!)
+    }
+    
+
+    @IBAction func ButtonBPushed(_ sender: UIButton) {
+        audioContainer.changeAudio(url: NSURL(string: "https://s3.amazonaws.com/cc0-tunes/nichecom/lets_dance.mp3")!)
+    }
+    
+    @IBAction func ButtonCPushed(_ sender: UIButton) {
+        audioContainer.changeAudio(url: NSURL(string: "https://s3.amazonaws.com/cc0-tunes/nichecom/spotting.mp3")!)
     }
 
     override func didReceiveMemoryWarning() {

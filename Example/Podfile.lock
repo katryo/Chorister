@@ -1,23 +1,27 @@
 PODS:
-  - AwesomeCache (2.0)
-  - Chorister (0.1.0):
-    - AwesomeCache (~> 2.0)
-  - Nimble (3.0.0)
-  - Quick (0.8.0)
+  - Chorister (0.1.4)
+  - Nimble (7.3.1)
+  - Quick (1.3.2)
 
 DEPENDENCIES:
   - Chorister (from `../`)
-  - Nimble (= 3.0.0)
-  - Quick (~> 0.8.0)
+  - Nimble
+  - Quick
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
 
 EXTERNAL SOURCES:
   Chorister:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AwesomeCache: 5d6839ad139cdcee3c3a067f6fc1849523867dd9
-  Chorister: 071c808bd7127ae6eec169b09bd771980d3aec5d
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
-  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+  Chorister: d42920bc9d11d050b900edaa55a37946962955a5
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: fbe354202f2c79183abdecea01b2ace061e77590
+
+COCOAPODS: 1.5.3

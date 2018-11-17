@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29EC2B1FE3A7C88512BC0505 /* Pods_Chorister_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D8604CD4A63A06BCA3ABB3 /* Pods_Chorister_Tests.framework */; };
+		434EC337CA9180ECCE333BE3 /* Pods_Chorister_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30206E06EE6F842110B231C6 /* Pods_Chorister_Example.framework */; };
 		530DD77F1C12DBAF00C3FEAB /* MusicContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530DD77E1C12DBAF00C3FEAB /* MusicContainer.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -14,8 +16,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		B91F8FE6D5809F5C7E9109BD /* Pods_Chorister_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0A200E8E9F6963E778E9B0 /* Pods_Chorister_Example.framework */; };
-		CD232461F5E69E1651F4B035 /* Pods_Chorister_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C2C4993C3C8E99FB021D05 /* Pods_Chorister_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,10 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C0A200E8E9F6963E778E9B0 /* Pods_Chorister_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chorister_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		110BA4835A046559422814F8 /* Pods-Chorister_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorister_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chorister_Tests/Pods-Chorister_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		00CEF5DFBC1FAAE59FF24C62 /* Pods-Chorister_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorister_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chorister_Example/Pods-Chorister_Example.release.xcconfig"; sourceTree = "<group>"; };
 		15938FAD9E2F1D9378B826A9 /* Chorister.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Chorister.podspec; path = ../Chorister.podspec; sourceTree = "<group>"; };
-		4BE002687F7E57102B4D62F0 /* Pods-Chorister_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorister_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chorister_Example/Pods-Chorister_Example.release.xcconfig"; sourceTree = "<group>"; };
+		30206E06EE6F842110B231C6 /* Pods_Chorister_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chorister_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D9150137184782E8695B1D /* Pods-Chorister_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorister_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chorister_Example/Pods-Chorister_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		530DD77E1C12DBAF00C3FEAB /* MusicContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicContainer.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Chorister_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chorister_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,10 +45,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9A80619A191BD191B00E31F0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		A3C2C4993C3C8E99FB021D05 /* Pods_Chorister_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chorister_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0A6E4FA7A8D06435EC2496C /* Pods-Chorister_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorister_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chorister_Tests/Pods-Chorister_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B71B07763610C2568F380674 /* Pods-Chorister_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorister_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chorister_Tests/Pods-Chorister_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B73887D7D6DF922723BE4C50 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D146A4BFB0425F97FED25033 /* Pods-Chorister_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorister_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chorister_Tests/Pods-Chorister_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DD5F405BAC37661511BAC75A /* Pods-Chorister_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chorister_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chorister_Example/Pods-Chorister_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D3D8604CD4A63A06BCA3ABB3 /* Pods_Chorister_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chorister_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B91F8FE6D5809F5C7E9109BD /* Pods_Chorister_Example.framework in Frameworks */,
+				434EC337CA9180ECCE333BE3 /* Pods_Chorister_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,29 +64,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD232461F5E69E1651F4B035 /* Pods_Chorister_Tests.framework in Frameworks */,
+				29EC2B1FE3A7C88512BC0505 /* Pods_Chorister_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		121D2DBF25FB5CFBC57264D6 /* Pods */ = {
+		41395277F5C73427B8C8091E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DD5F405BAC37661511BAC75A /* Pods-Chorister_Example.debug.xcconfig */,
-				4BE002687F7E57102B4D62F0 /* Pods-Chorister_Example.release.xcconfig */,
-				110BA4835A046559422814F8 /* Pods-Chorister_Tests.debug.xcconfig */,
-				D146A4BFB0425F97FED25033 /* Pods-Chorister_Tests.release.xcconfig */,
+				38D9150137184782E8695B1D /* Pods-Chorister_Example.debug.xcconfig */,
+				00CEF5DFBC1FAAE59FF24C62 /* Pods-Chorister_Example.release.xcconfig */,
+				B0A6E4FA7A8D06435EC2496C /* Pods-Chorister_Tests.debug.xcconfig */,
+				B71B07763610C2568F380674 /* Pods-Chorister_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		30DDC96C27CE08CE2A786118 /* Frameworks */ = {
+		4AE117475CEA4A70FC6A5279 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C0A200E8E9F6963E778E9B0 /* Pods_Chorister_Example.framework */,
-				A3C2C4993C3C8E99FB021D05 /* Pods_Chorister_Tests.framework */,
+				30206E06EE6F842110B231C6 /* Pods_Chorister_Example.framework */,
+				D3D8604CD4A63A06BCA3ABB3 /* Pods_Chorister_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,8 +98,8 @@
 				607FACD21AFB9204008FA782 /* Example for Chorister */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				121D2DBF25FB5CFBC57264D6 /* Pods */,
-				30DDC96C27CE08CE2A786118 /* Frameworks */,
+				41395277F5C73427B8C8091E /* Pods */,
+				4AE117475CEA4A70FC6A5279 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,12 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Chorister_Example" */;
 			buildPhases = (
-				93A45ABDA1C0549B1B7236B2 /* Check Pods Manifest.lock */,
+				2023136CD3118394B4182719 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				15E711F0F103E2AC177CB547 /* Embed Pods Frameworks */,
-				1C85564BBD8250AD83B9F96B /* Copy Pods Resources */,
+				A4CBD59F565261FB3EA4148C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,12 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Chorister_Tests" */;
 			buildPhases = (
-				5CBE5CFAEF0253A2B1C898FD /* Check Pods Manifest.lock */,
+				941EB8325B8F4292BC411351 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				0E72303037CC7D46BD99DDD9 /* Embed Pods Frameworks */,
-				96166F9EB6E61A5F3DAD1BA3 /* Copy Pods Resources */,
+				920FC04F0C6F8344DAF420F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,94 +263,96 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0E72303037CC7D46BD99DDD9 /* Embed Pods Frameworks */ = {
+		2023136CD3118394B4182719 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chorister_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		920FC04F0C6F8344DAF420F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chorister_Tests/Pods-Chorister_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Chorister/Chorister.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Chorister.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chorister_Tests/Pods-Chorister_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		15E711F0F103E2AC177CB547 /* Embed Pods Frameworks */ = {
+		941EB8325B8F4292BC411351 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chorister_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4CBD59F565261FB3EA4148C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chorister_Example/Pods-Chorister_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Chorister/Chorister.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Chorister.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chorister_Example/Pods-Chorister_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1C85564BBD8250AD83B9F96B /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chorister_Example/Pods-Chorister_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5CBE5CFAEF0253A2B1C898FD /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		93A45ABDA1C0549B1B7236B2 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		96166F9EB6E61A5F3DAD1BA3 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chorister_Tests/Pods-Chorister_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -489,31 +489,33 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD5F405BAC37661511BAC75A /* Pods-Chorister_Example.debug.xcconfig */;
+			baseConfigurationReference = 38D9150137184782E8695B1D /* Pods-Chorister_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Chorister/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BE002687F7E57102B4D62F0 /* Pods-Chorister_Example.release.xcconfig */;
+			baseConfigurationReference = 00CEF5DFBC1FAAE59FF24C62 /* Pods-Chorister_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Chorister/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 110BA4835A046559422814F8 /* Pods-Chorister_Tests.debug.xcconfig */;
+			baseConfigurationReference = B0A6E4FA7A8D06435EC2496C /* Pods-Chorister_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -527,13 +529,14 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chorister_Example.app/Chorister_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D146A4BFB0425F97FED25033 /* Pods-Chorister_Tests.release.xcconfig */;
+			baseConfigurationReference = B71B07763610C2568F380674 /* Pods-Chorister_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -543,6 +546,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chorister_Example.app/Chorister_Example";
 			};
 			name = Release;
