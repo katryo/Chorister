@@ -124,8 +124,10 @@ class Cache<T: NSCoding> {
             
             for key in keys {
                 
-                // `objectForKey:` deletes the object if it is expired
-                self.objectForKey(key: key!)
+                let object = self.cache.object(forKey: key as AnyObject) as? CacheObject
+                if object!.isExpired() {
+                    self.removeObjectForKey(key: key!)
+                }
             }
         }
     }

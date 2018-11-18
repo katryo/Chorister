@@ -49,7 +49,6 @@ class AudioLoader: NSObject, AVAssetResourceLoaderDelegate, NSURLConnectionDataD
     
     func resourceLoader(_ resourceLoader: AVAssetResourceLoader, shouldWaitForLoadingOfRequestedResource loadingRequest: AVAssetResourceLoadingRequest) -> Bool {
         let url = loadingRequest.request.url!
-        let interceptedURL = loadingRequest.request.url!.absoluteString
         let actualURL = getActualURL(url: url as NSURL)
         let urlString = actualURL.absoluteString
         if (connections[urlString!] == nil) {

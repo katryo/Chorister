@@ -41,7 +41,7 @@ open class StreamingAudioCacheContainer: NSObject {
             if keyPath == "status" {
                 musicPlayer.play()
                 if isLooping {
-                    NotificationCenter.default.addObserver(self, selector: "musicFinished", name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: musicPlayer.currentItem)
+                    NotificationCenter.default.addObserver(self, selector: #selector(StreamingAudioCacheContainer.musicFinished), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: musicPlayer.currentItem)
 
                 }
 
@@ -49,7 +49,7 @@ open class StreamingAudioCacheContainer: NSObject {
         }
     }
     
-    func musicFinished() {
+    @objc func musicFinished() {
         musicPlayer.seek(to: CMTimeMake(value: 0, timescale: 600))
         musicPlayer.play()
     }
